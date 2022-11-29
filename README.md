@@ -3,6 +3,14 @@
 ## Description
  CMS system will help organize your company by adding, deleting, updating or even creating a new data base for the different departments, as their roles, incoming, etc. in an easy way. Even update information already in the system.
 
+## User Story
+  
+```bash
+AS A business owner
+I WANT to be able to view and manage the departments, roles, and employees in my company
+SO THAT I can organize and plan my business
+```
+
 
 ## Installation
   To install the necessary dependencies, run the following command:
