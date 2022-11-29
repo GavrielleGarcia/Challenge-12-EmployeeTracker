@@ -2,12 +2,7 @@
 
 ## Description
  CMS system will help organize your company by adding, deletig, updating or even creating a new data base for the different departments, as their roles, incoming, etc. in an easy way.
-## Table of Content
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Test](#test)
-* [Questions](#questions)
+
 
 ## Installation
   To install the necessary dependencies, run the following command:
@@ -25,8 +20,8 @@ After the dependencies are installed, create a .ENV file and fill it with your c
 ```bash
 DB_HOST=localhost
     DB_PORT=3306
-    DB_USER=yourUser
-    DB_PASS=yourPassword
+    DB_USER=root
+    DB_PASS=
 ```
 
 Now, you can proceed to create the datbase schema:
@@ -41,7 +36,7 @@ Now, you can proceed to create the datbase schema:
 Then, start working with the main file:
 
 ```bash
- #    node index.js
+    node index.js
 ```
 
 ## Technologies Used
@@ -59,7 +54,7 @@ Then, start working with the main file:
  
  
 ## Questions
-  You can see more of my work on [gavriellegarcia](https://github.com/gavriellegarcia).
+  My stuff [gavriellegarcia](https://github.com/gavriellegarcia).
 
-  If you have any additional questions send me an owl: gavrielle.garcia@hotmail.com.  
+ Send me an owl: gavrielle.garcia@hotmail.com.  
   
