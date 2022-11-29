@@ -60,7 +60,7 @@ Finally, start working with the main file:
  
 
  ## Overview 
-![alt text](https://github.com/GavrielleGarcia/Challenge-12-EmployeeTracker/blob/main/images/Demo.mp4)
+ [Link to the video](https://app.screencast.com/mz4wual4HjQq6?conversation=atUQdYtNMvfiUHyrNOk1hA)
 
  
 ## Contributing 
