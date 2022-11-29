@@ -12,7 +12,7 @@ const db = mysql.createConnection(
         port: connection.db_port,
         user: connection.db_user,
         password: connection.db_pass,
-        database: 'main_db'
+        database: 'company_db'
     },    
     console.log(`Connected to the database.`)
 );
@@ -21,7 +21,7 @@ db.connect(err => {
     if (err) throw err;
 });
 
-//gets info from DB for VIEW in the Main menu
+//gets info from the DB for the VIEW option on the ppal menu
 const view = (option) => {
     let queryReq = '';
     switch (option) {
@@ -55,7 +55,7 @@ const view = (option) => {
         app.showMenu();
     });
 };
-//GETS info from the DB based on the received info
+//gets info from the database based on the parameters it receives
 const getData = (columns, table, condition) => {
     let queryReq = '';
     condition ? queryReq = `SELECT ${columns} FROM ${table} WHERE ${condition};` : queryReq = `SELECT ${columns} FROM ${table};`;
@@ -64,7 +64,7 @@ const getData = (columns, table, condition) => {
             return data;
         });
 };
-//ADDS info from the DB based on the received info
+//adds to the database the information received in the parameters
 const add = (table, columns, data) => {
     let queryReq = `INSERT INTO ${table} (${columns}) VALUES (${data});`;
     db.query(queryReq, (err, res) => {
@@ -73,7 +73,7 @@ const add = (table, columns, data) => {
         app.showMenu();
     });
 };
-//UPDATES info from the DB based on the received info
+//updates the database with the information received in the parameters
 const update = (table, setChanges, condition, msg) => {
     let queryReq = `UPDATE ${table} SET ${setChanges} WHERE ${condition}`;
     db.query(queryReq, (err, res) => {

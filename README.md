@@ -1,7 +1,7 @@
 # Challenge-12-EmployeeTracker
 
 ## Description
- CMS system will help organize your company by adding, deletig, updating or even creating a new data base for the different departments, as their roles, incoming, etc. in an easy way.
+ CMS system will help organize your company by adding, deleting, updating or even creating a new data base for the different departments, as their roles, incoming, etc. in an easy way. Even update information already in the system.
 
 
 ## Installation
@@ -15,25 +15,31 @@ npm install --save mysql2
 npm install console.table --save
 ```
 
-After the dependencies are installed, create a .ENV file and fill it with your connection information. Example as follows:
+After the dependencies are installed, create a .ENV file and fill it with your connection information. 
+
+Example as follows (Update with you SQL Password):
 
 ```bash
 DB_HOST=localhost
-    DB_PORT=3306
-    DB_USER=root
-    DB_PASS=
+DB_PORT=3306
+DB_USER=root
+DB_PASS='YOUR PASSWORD'
 ```
 
 Now, you can proceed to create the datbase schema:
 
 ```bash
- #work on MySQL
+ #Switch terminal to MySQL
     mysql -u root -p
-    # to create the DB schema
-    db/SOURCE schema.sql
+    # create the wanted DB from squema file
+    source db/schema.sql
+    # use the existing information from seeds file
+    source db/seeds.sql
 ```
 
-Then, start working with the main file:
+Then, exit the SQL Terminal.
+
+Finally, start working with the main file:
 
 ```bash
     node index.js
@@ -46,11 +52,11 @@ Then, start working with the main file:
  
 
  ## Overview 
-![alt text](https://github.com/GavrielleGarcia/Challenge-12-EmployeeTracker/blob/main/images/Employee%20Tracker%20Error.jpg)
+![alt text](https://github.com/GavrielleGarcia/Challenge-12-EmployeeTracker/blob/main/images/Demo.mp4)
 
  
 ## Contributing 
- Open to ay contribution for fixing my issue with the node connection with the mySQL connection.
+ This project is not open for contributions at the moment. Thanks.
  
  
 ## Questions

@@ -16,7 +16,7 @@ const viewMenu = () => {
         db.view(selView.viewMenu);
     });
 };
-//get info to add a new department to the DB
+//New info to DB
 function addDepartment() {
     inquirer.prompt({type: 'input', name: 'name', message: 'What\'s the name of the new department? ', validate: name => {return (!name ? 'Write the title for the NEW role' : true);}})
     .then((data) => {
